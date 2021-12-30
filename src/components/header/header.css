@@ -1,0 +1,77 @@
+.header-container {
+  width: 100%;
+  height: 500px;
+  padding: 10px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/public/images/hunting.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.header-location_link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: max-content;
+  text-decoration: none;
+  color: gray;
+}
+
+.header-location_link:hover {
+  color: cadetblue;
+}
+
+.header-location_link_img {
+  width: 25px;
+  height: 25px;
+  fill: gray;
+}
+
+.header-location_link:hover .header-location_link_img {
+  fill: cadetblue;
+}
+
+.header-contacts svg {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.header-contacts svg:hover {
+  transform: rotate(15deg);
+}
+
+.header-title.header-title {
+  margin-top: 250px;
+  color: gray;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.header-phone_number.header-phone_number {
+  color: gray;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 420px) {
+  .header-container {
+    height: 200px;
+  }
+
+  .header-location_title {
+    display: none;
+  }
+
+  .header-title.header-title {
+    margin-top: 70px;
+    font-size: 30px;
+  }
+
+  .header-phone_number.header-phone_number {
+    color: gray;
+    font-size: 15px;
+  }
+}
