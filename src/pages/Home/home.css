@@ -1,0 +1,68 @@
+.home-container {
+  padding: 50px;
+  background-color: whitesmoke;
+}
+
+.home-info_seasons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+  background-color: tomato;
+  border-radius: 15px;
+}
+
+.home-info {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 50px;
+  margin-top: 30px;
+}
+
+.home-info_title.home-info_title {
+  font-size: 30px;
+}
+
+.home-info_content {
+  padding: 10px;
+  border: 1px dotted gray;
+  border-radius: 15px;
+  text-align: justify;
+}
+
+.home-price_content {
+  display: grid;
+  grid-template-columns: max-content auto;
+  row-gap: 10px;
+  column-gap: 15px;
+  padding: 10px;
+  border: 1px dotted gray;
+  border-radius: 15px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 950px) {
+  .home-info {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+
+  .home-info_title.home-info_title {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home-container {
+    padding: 20px 10px;
+  }
+
+  .home-info_season.home-info_season {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-info_title.home-info_title {
+    font-size: 25px;
+  }
+}
