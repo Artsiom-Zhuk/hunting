@@ -1,0 +1,12 @@
+.title.title {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  color: #1d1f22;
+}
+
+@media only screen and (max-width: 500px) {
+  .title.title {
+    font-size: 30px;
+  }
+}

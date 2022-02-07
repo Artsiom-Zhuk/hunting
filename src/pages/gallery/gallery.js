@@ -1,16 +1,19 @@
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
+import { useLocation } from "react-router-dom";
 import ResponsiveGallery from "react-responsive-gallery";
 
-import { GALLERY_IMAGES } from "../../constants";
+import Container from "../../components/container";
+import Title from "../../components/title";
+import { GALLERY_IMAGES, PAGE_NAMES_BY_PATHNAME } from "../../constants";
 
-import "./gallery.css";
+const Gallery = () => {
+  const { pathname } = useLocation();
 
-const Gallery = () => (
-  <Box className="gallery-container">
-    <Typography className="gallery-title">Фотогалерея</Typography>
-    <ResponsiveGallery images={GALLERY_IMAGES} />
-  </Box>
-);
+  return (
+    <Container>
+      <Title>{PAGE_NAMES_BY_PATHNAME[pathname]}</Title>
+      <ResponsiveGallery images={GALLERY_IMAGES} />
+    </Container>
+  );
+};
 
 export default Gallery;
