@@ -4,7 +4,7 @@ import { ReactComponent as MailImage } from "../images/mail.svg";
 import { ReactComponent as PhoneImage } from "../images/phone.svg";
 import { ReactComponent as InstagramImage } from "../images/instagram.svg";
 
-export const CONTACTS = [
+export const HEADER_CONTACTS = [
   {
     href: "https://telegram.me/Bogomaz2022",
     img: <TelegramImage />,

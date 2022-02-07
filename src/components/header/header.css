@@ -10,26 +10,18 @@
   box-sizing: border-box;
 }
 
-.header-location_link {
+.header-link {
   display: flex;
   align-items: center;
-  gap: 10px;
-  width: max-content;
-  text-decoration: none;
-  color: gray;
 }
 
-.header-location_link:hover {
-  color: cadetblue;
-}
-
-.header-location_link_img {
-  width: 25px;
-  height: 25px;
+.header-link svg {
+  width: 30px;
+  height: 30px;
   fill: gray;
 }
 
-.header-location_link:hover .header-location_link_img {
+.header-link svg:hover {
   fill: cadetblue;
 }
 
@@ -73,5 +65,10 @@
   .header-phone_number.header-phone_number {
     color: gray;
     font-size: 15px;
+  }
+
+  .header-link svg {
+    width: 25px;
+    height: 25px;
   }
 }

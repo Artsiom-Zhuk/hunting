@@ -1,2 +1,4 @@
 export * from "./router";
-export * from "./contacts";
+export * from "./header_contacts";
+export * from "./header_links";
+export * from "./gallery_images";

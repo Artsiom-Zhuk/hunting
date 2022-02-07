@@ -4,22 +4,23 @@ import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 
-import { ReactComponent as LocationImage } from "../../images/location.svg";
-
-import { ROUTER_PATHS, CONTACTS } from "../../constants";
+import { HEADER_CONTACTS, HEADER_LINKS } from "../../constants";
 
 import "./header.css";
 
 export const Header = () => (
   <Box className="header-container">
     <Stack direction="row" alignItems="center" justifyContent="space-between">
-      <RouterLink to={ROUTER_PATHS.Example} className="header-location_link">
-        <LocationImage className="header-location_link_img" />
-        <Typography className="header-location_title">г. Гомель</Typography>
-      </RouterLink>
+      <Stack direction="row" gap="10px">
+        {HEADER_LINKS.map((link) => (
+          <RouterLink to={link.path} key={link.path} className="header-link">
+            {link.icon}
+          </RouterLink>
+        ))}
+      </Stack>
 
-      <Stack direction="row" gap="15px" className="header-contacts">
-        {CONTACTS.map((contact) => (
+      <Stack direction="row" gap="10px" className="header-contacts">
+        {HEADER_CONTACTS.map((contact) => (
           <Link key={contact.href} href={contact.href} target="_blank">
             {contact.img}
           </Link>
