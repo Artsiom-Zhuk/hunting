@@ -5,7 +5,7 @@ import { ROUTER_PATHS } from "../constants";
 
 export const HEADER_LINKS = [
   {
-    path: ROUTER_PATHS.Home,
+    path: ROUTER_PATHS.Map,
     icon: <LocationImage />,
   },
   {
